@@ -1,0 +1,79 @@
+
+.navegacion
+{
+    background: rgb(153, 51, 255);
+    padding: 40px 70px;
+    border-style: solid;
+}
+
+header
+{
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+h1
+{
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    padding: 30px 10px;
+}
+.navigation a
+{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 0 1.3rem;
+}
+.navigation a:hover
+{
+    background-color: mediumpurple;
+    border-radius: 40px;
+}
+.navigation li
+{
+    display: inline;
+    font-size: 20px;
+    margin: auto;
+    list-style: none;
+}
+
+/*seccion de edad*/
+.containerB
+{
+    background-color: rgb(101, 11, 135 );
+    text-align: center;
+    align-items: center;
+    width: 900px;
+    height: 650px;
+    border-radius: 20px;
+    margin: auto;
+    transform: translate(0, 10%);
+}
+.containerC
+{
+    background-color: lightgray;
+    text-align: center;
+    align-items: center;
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    margin: auto;
+    transform: translate(0, 15%);
+}
+.containerC h1
+{
+    font-size: 40px;
+    margin: auto;
+    padding: 30px 10px;
+    font-family: 'pacifico', cursive;
+}
+.containerC h2
+{
+    font-size: 30px;
+    margin: auto;
+    padding: 20px 10px;
+    font-family: 'pacifico', cursive;
+}

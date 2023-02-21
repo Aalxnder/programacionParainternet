@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="IndexCSS.css">
+</head>
+<body>
+
+<header><h1>Levi Alexander Perez Elizondo</h1></header>
+<div class = "navegacion">
+    <nav class = "navigation">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Edad</a></li>
+        <li><a href="#">IMC</a></li>
+    </nav>
+</div>
+
+<!--mayor o menor de edad-->
+<div class="containerB">
+    <div class="containerC">
+        <h1>Ejemplo con condicional if</h1>
+        <h2>Indica si eres mayor o menor de edad</h2>
+        <label class = "label" for="number">Introduce tu edad</label>
+        <input class = "input" placeholder="Ingresa tu edad" type="number" name="" id="number">
+        <button class = "button" onclick="mayorMenor()">Verificar</button>
+        <br>
+        <p id = "resultado">Resultado</p>
+    </div>
+</div>
+
+<!--indice de masa corporal-->
+    <h1>Ejemplo con switch case</h1>
+    <h2>calculo de indice de masa corporal</h2>
+    <label for="peso">Introduce tu peso</label>
+    <input type="number" name="" id="peso">
+    <label for="altura">introduce tu estatura</label>
+    <input type="number" name="" id="altura">
+    <button onclick="IMC()">Verificar</button>
+    <br>
+    <p class = "imcResultado" id = "IMC">Resultado</p>
+
+    <script src="IndexJS.js"></script>
+<select name ="" id = "select">
+    <option value="0">°C</option>
+    <option value="1">°F</option>
+    <option value="2">°K</option>
+    <option value="3">°R</option>
+</select>
+<h3 id = "valor">valor</h3>
+<button onclick="convertir()">Convertir</button>
+</body>
+</html>
