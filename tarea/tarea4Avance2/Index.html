@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="IndexCSS.css">
+    <script src="https://kit.fontawesome.com/9c7f1ed8be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header><h1>Levi Alexander Perez Elizondo</h1></header>
+    <div class = "navegacion">
+        <nav class ="navigation">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#Edad">Calcular edad</a></li>
+            <li><a href="#IMC">Calcular IMC</a></li>
+            <li><a href="#conversor">Conversor Grados</a></li>
+        </nav>
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+    <!--mayor o menor de edad-->
+    <section class = "Edad">
+        <div class="container">
+            <div class="container2">
+                <h1>Ejemplo con condicional if</h1>
+                <h2>Indica si eres mayor o menor de edad</h2>
+                <label class = "label" for="number">Introduce tu edad:</label><br>
+                <input class = "input" placeholder="Ingresa tu edad" type="number" name="" id="number">
+                <button class = "button" onclick="mayorMenor()">Verificar</button>
+                <br>
+                <div class="result">
+                    <p id = "resultado">Resultado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="IMC">
+        <div class="containerImc">
+            <div class="containerImc2">
+                <!--indice de masa corporal-->
+                <h1>Ejemplo con switch case</h1>
+                <h2>calculo de indice de masa corporal</h2>
+                <label class = "label" for="peso">Introduce tu peso:</label>
+                <input class = "input1" type="number" name="" id="peso">
+                <label class = "label" for="altura">introduce tu estatura:</label>
+                <input class = "input" type="number" name="" id="altura">
+                <button class="button" onclick="IMC()">Verificar</button>
+                <br>
+                <p class = "imcResultado" id = "IMC">Resultado</p>
+            </div>
+        </div>
+    </section>
+
+    <section class = "conversor">
+        <div class="containerConversor">
+            <div class="containerConversor2">
+                <h3 id = "valor">Conversor de grados</h3>
+                <h4>elije la conversion</h4>
+                <select class = "select" name="#" id="select">
+                    <option value = "0" >°C</option>
+                    <option value = "1" >°F</option>
+                    <option value = "2" >°K</option>
+                    <option value = "3" >°R</option>
+                </select>
+                <i class="fas fa-exchange-alt"></i>
+                <select class="select" name="#" id="select2">
+                    <option value = "0" >°C</option>
+                    <option value = "1" >°F</option>
+                    <option value = "2" >°K</option>
+                    <option value = "3" >°R</option>
+                </select>
+                <br>
+                <label class = "label" id = "entradaLabel" for = "entrada">Ingresa los grados a convertir</label>
+                <input class = "input1" type="number" id = "entrada">
+                <br>
+                <label class = "label" id = "salidaLabel" for = "salida">Resultado</label>
+
+                <input class = "input" type="number" id = "salida" readonly>
+                <button class = "button" onclick="conversor()">Convertir</button>
+                <br>
+
+            </div>
+        </div>
+    </section>
+    <script src="IndexJS.js"></script>
+</body>
+</html>
