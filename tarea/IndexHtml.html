@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="IndexCSS.css">
+    <script src="https://kit.fontawesome.com/9c7f1ed8be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header><h1>Levi Alexander Perez Elizondo</h1></header>
+<div class = "navegacion">
+    <nav class ="navigation">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#Edad">Calcular edad</a></li>
+        <li><a href="#IMC">Calcular IMC</a></li>
+        <li><a href="#conversor">Conversor Grados</a></li>
+        <li><a href="#calculadora">calculadora</a></li>
+    </nav>
+    <div class="icons">
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</div>
+<!--mayor o menor de edad-->
+<section class = "Edad">
+    <div class="container">
+        <div class="container2">
+            <h1>Ejemplo con condicional if</h1>
+            <h2>Indica si eres mayor o menor de edad</h2>
+            <label class = "label" for="number">Introduce tu edad:</label><br>
+            <input class = "input" placeholder="Ingresa tu edad" type="number" name="" id="number">
+            <button class = "button" onclick="mayorMenor()">Verificar</button>
+            <br>
+            <div class="result">
+                <p id = "resultado">Resultado</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="IMC">
+    <div class="containerImc">
+        <div class="containerImc2">
+            <!--indice de masa corporal-->
+            <h1>Ejemplo con switch case</h1>
+            <h2>calculo de indice de masa corporal</h2>
+            <label class = "label" for="peso">Introduce tu peso:</label>
+            <input class = "input1" type="number" name="" id="peso">
+            <label class = "label" for="altura">introduce tu estatura:</label>
+            <input class = "input" type="number" name="" id="altura">
+            <button class="button" onclick="IMC()">Verificar</button>
+            <br>
+            <p class = "imcResultado" id = "IMC">Resultado</p>
+        </div>
+    </div>
+</section>
+
+<section class = "conversor">
+    <div class="containerConversor">
+        <div class="containerConversor2">
+            <h3 id = "valor">Conversor de grados</h3>
+            <h4>elije la conversion</h4>
+            <select class = "select" name="#" id="select">
+                <option value = "0" >°C</option>
+                <option value = "1" >°F</option>
+                <option value = "2" >°K</option>
+                <option value = "3" >°R</option>
+            </select>
+            <i class="fas fa-exchange-alt"></i>
+            <select class="select" name="#" id="select2">
+                <option value = "0" >°C</option>
+                <option value = "1" >°F</option>
+                <option value = "2" >°K</option>
+                <option value = "3" >°R</option>
+            </select>
+            <br>
+            <label class = "label" id = "entradaLabel" for = "entrada">Ingresa los grados a convertir</label>
+            <input class = "input1" type="number" id = "entrada">
+            <br>
+            <label class = "label" id = "salidaLabel" for = "salida">Resultado</label>
+
+            <input class = "input" type="number" id = "salida" readonly>
+            <button class = "button" onclick="conversor()">Convertir</button>
+            <br>
+
+        </div>
+    </div>
+</section>
+
+<section class = "calculadora">
+    <div class="containerCal">
+        <div class="calculator">
+            <div class="display">0</div>
+            <div class="keypad">
+                <div class="keypadNumbers">
+                    <div class="keypadButtons large">C</div>
+                    <div class="keypadButtons operacion">%</div>
+                    <div class="keypadButtons operacion">/</div>
+                    <div class="keypadButtons">7</div>
+                    <div class="keypadButtons">8</div>
+                    <div class="keypadButtons">9</div>
+                    <div class="keypadButtons operacion">*</div>
+                    <div class="keypadButtons">4</div>
+                    <div class="keypadButtons">5</div>
+                    <div class="keypadButtons">6</div>
+                    <div class="keypadButtons operacion">-</div>
+                    <div class="keypadButtons">1</div>
+                    <div class="keypadButtons">2</div>
+                    <div class="keypadButtons">3</div>
+                    <div class="keypadButtons operacion">+</div>
+                    <div class="keypadButtons large">0</div>
+                    <div class="keypadButtons">.</div>
+                    <div class="keypadButtons operacion">=</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="tables">
+    <hr>
+    <div class="titulo">
+        <h1>Formato de tablas</h1>
+    </div>
+    <hr>
+    <h2>Opciones:</h2>
+    <div class="contenedor__controles">
+        <div class="contenedor__botones">
+            <div class="etiqueta">
+                <label for="">Color de fuente encabezados</label>
+            </div>
+
+            <input class="btn_rojo" onclick="rojoFcn()" type="button" value="">
+            <input class="btn_verde" onclick="verdeFcn()"  type="button" value="">
+            <input class="btn_azul" onclick="azulFcn()"  type="button" value="">
+            <input class="btn_blanco" onclick="blancoFcn()"  type="button" value="">
+            <input class="btn_negro" onclick="negroFcn()"  type="button" value="">
+            <input class="btn_morado" onclick="moradoFcn()"   type="button" value="">
+
+        </div>
+
+        <div class="alinear__tipo-fuente">
+            <label for="fuentes">Tipo de fuente</label>
+            <select onchange="encabezado()" class = "fuentes" name="#" id="fuentes">
+                <option value="0">Times New Roman</option>
+                <option value="1">Arial</option>
+                <option value="2">Helvetica</option>
+                <option value="3">Verdana</option>
+                <option value="4">Cambria</option>
+                <option value="5">Arial black</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="entrada">Tamaño de la fuente</label>
+            <input onchange="tamanio()" type="number" name="" id="tamanio" value="12">
+        </div>
+
+        <div class="alinear__tipo-fuente">
+            <label for="formatos">Elige un formato:</label>
+            <select onchange="formatosFnc()" name="" id="formatos">
+                <option value="0">Formato 1</option>
+                <option value="1">Formato 2</option>
+                <option value="2">Formato 3</option>
+                <option value="3">Formato 4</option>
+            </select>
+        </div>
+    </div>
+
+    <table class="customers">
+        <tr>
+            <th class="color__fuente">Company</th>
+            <th class="color__fuente">Contact</th>
+            <th class="color__fuente">Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Christina Berglund</td>
+            <td>Sweden</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Königlich Essen</td>
+            <td>Philip Cramer</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+        <tr>
+            <td>North/South</td>
+            <td>Simon Crowther</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Paris spécialités</td>
+            <td>Marie Bertrand</td>
+            <td>France</td>
+        </tr>
+    </table>
+
+</section>
+<footer class = "footer">
+    <div class="containerFooter">
+        <div class="boxFooter">
+            <div class="logo">
+                <img src="/Imagenes/rustInPeace.jpg" alt="">
+            </div>
+        </div>
+        <div class="boxFooter">
+            <h2>Lenguajes Utilizados</h2>
+            <a href="#"> <i class="fa-brands fa-html5"></i>Html</a>
+            <a href="#"> <i class="fa-brands fa-css3-alt"></i>Css</a>
+            <a href="#"> <i class="fa-brands fa-square-js"></i>Javascript</a>
+            <p>Pagina desarrollada para la clase programacion para internet</p>
+        </div>
+        <div class="boxFooter">
+            <h2>Acerca De</h2>
+            <p>Levi Alexander Perez Elizondo</p>
+            <p>Estudiante de ingenieria en computacion</p>
+            <p>Programacion para internet</p>
+        </div>
+        <div class="boxFooter">
+            <h2>Redes sociales</h2>
+            <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            <a href="#"><i class="fa-brands fa-github"></i>Github</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+        </div>
+    </div>
+    <div class = "box__copyright">
+        <hr>
+        <p>Todos los derechos reservados © 2023 <b>Levi Alexander Perez Elizondo</b></p>
+    </div>
+</footer>
+<script src="IndexJS.js"></script>
+
+</body>
+</html>
