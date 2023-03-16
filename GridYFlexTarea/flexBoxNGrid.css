@@ -1,0 +1,220 @@
+:root
+{
+    --colortextos: #000000;
+    --colorbotones: #A381F7;
+    --colorfondo: #FFFFFF;
+    --paddingsecciones: 60px 0;
+    --marginelementos: 40px;
+}
+.header
+{
+    height: 500px;
+    background-color: black;
+    color: white;
+}
+.Menu1Title
+{
+    height: 70px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: rgb(0,0,0);
+}
+.Menu1Title h2
+{
+    line-height: 60px;
+    font-size: 1.8em;
+    text-align: center;
+    font-family:'pacifico',cursive ;
+    font-weight:100;
+    color: white;
+    margin: auto;
+}
+.contenedor
+{
+    width:90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+/* Menu*/
+.menu-navegacion
+{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin: auto;
+}
+.logo
+{
+    height: 70px;
+}
+.logo img
+{
+    display: block;
+    height: 100%;
+    border-radius: 100%;
+}
+
+
+.enlaces li
+{
+    list-style: none;
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 16px;
+}
+.enlaces a
+{
+    text-transform: none;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.enlaces a:hover
+{
+    color: #A381F7;
+}
+/*banner*/
+.Banner
+{
+    height: 300px;
+    background-image: url("../Imagenes/BannerMusic.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contenedor-textos
+{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    max-width: 400px;
+    margin-left: 100px ;
+}
+.Banner h1
+{
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*menu 2*/
+.Menu2Title
+{
+    height: 70px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: rgb(0,0,0);
+}
+.Menu2Title h2
+{
+    line-height: 60px;
+    font-size: 1.8em;
+    text-align: center;
+    font-family:'pacifico',cursive ;
+    font-weight:100;
+    color: white;
+    margin: auto;
+}
+.menu-navegacion2
+{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    aling-items: center;
+    height: 70px;
+    margin: auto;
+}
+.menu2
+{
+    height: 500px;
+    background-color: black;
+    color: white;
+}
+.Banner2
+{
+    height: 300px;
+    background-image: url("../Imagenes/BannerAlbum.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 1200px;
+}
+
+/*uso grid*/
+.grid-container
+{
+    width: 90%;
+    background: gray;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 240px;
+}
+.gridTitle
+{
+    grid-column-start:1 ;
+    grid-column-end: 5;
+    background: rgb(0,0,0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+.grid-item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+/*uso flex*/
+.flex-container
+{
+    width: 90%;
+    background: gray;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flexTitle
+{
+    width: 100%;
+    background: rgb(0,0,0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+.flex-item
+{
+    width: 240px;
+    height: 240px;
+    background: #000000;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.9em;
+}

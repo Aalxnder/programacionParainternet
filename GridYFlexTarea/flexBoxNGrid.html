@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Uso de flex y Grid</title>
+    <link rel="stylesheet" href="flexBoxNGrid.css">
+</head>
+<body>
+<!--    uso de flex-->
+<header class = "header">
+    <div class="Menu1Title">
+        <h2>Menu 1 Con flex (Canciones Favoritas)</h2>
+    </div>
+
+    <nav class = "menu-navegacion contenedor">
+        <div class = "logo">
+            <img src="/Imagenes/cancionesFav.jpg" alt="Imagen de canciones favoritas">
+        </div>
+        <div class = "enlaces">
+            <li><a href="https://music.youtube.com/watch?v=bVa3roKGaeI&feature=share" target="_blank">lorelei</a></li>
+            <li><a href="https://music.youtube.com/watch?v=1VGbnKGRxMc&feature=share" target="_blank">Love hurts</a></li>
+            <li><a href="https://music.youtube.com/watch?v=5foQanhdArA&feature=share" target="_blank">No more tears</a></li>
+            <li><a href="https://music.youtube.com/watch?v=Ctic1jq__u8&feature=share" target="_blank">Five magics</a></li>
+            <li><a href="https://music.youtube.com/watch?v=mNO5sfXKSmI&feature=share" target="_blank">La chispa adecuada</a></li>
+            <li><a href="https://music.youtube.com/watch?v=xdkWYD7hjrQ&feature=share" target="_blank">Maldito duende</a></li>
+        </div>
+    </nav>
+    <section class="Banner">
+        <div class="contenedor-textos contenedor">
+            <h1>Mis canciones favoritas</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cupiditate ea natus sequi temporibus.
+                Architecto atque consectetur cupiditate doloribus et nostrum praesentium repudiandae tenetur, vero.
+                Autem expedita molestiae sed sunt.</p>
+        </div>
+    </section>
+</header>
+<section class = "menu2">
+    <div class="Menu2Title">
+        <h2>Menu 2 Con flex (Albumes Favoritos)</h2>
+    </div>
+    <nav class = "menu-navegacion contenedor">
+        <div class = "logo">
+            <img src="/Imagenes/cancionesFav.jpg" alt="Imagen de canciones favoritas">
+        </div>
+        <div class = "enlaces">
+            <li><a href="https://music.youtube.com/playlist?list=OLAK5uy_l8vqOyheJ7cTWMxaOOPGBnceUaGRTIsgo&feature=share" target="_blank">Rust in peace</a></li>
+            <li><a href="https://music.youtube.com/playlist?list=OLAK5uy_lHxWdlcjtm5i9tcoewhyNUqTbayq3_Ylo&feature=share" target="_blank">Crazy world</a></li>
+            <li><a href="https://music.youtube.com/playlist?list=OLAK5uy_ltQiuNnoBifeiEYSjm5Ac1Z-x3ydiYrq4&feature=share" target="_blank">Apetitte for destruction</a></li>
+            <li><a href="https://music.youtube.com/playlist?list=OLAK5uy_mEohNhDSJa_WWnTAqTkR0QWF8YsEaVkxw&feature=share" target="_blank">No Gravity</a></li>
+            <li><a href="https://music.youtube.com/playlist?list=OLAK5uy_k-jBYNmBCTV4PqdMENNN5QhXUK1Nxv98o&feature=share" target="_blank">youthanasia</a></li>
+            <li><a href="https://music.youtube.com/playlist?list=OLAK5uy_nA_rr6h17W03VjaCdozrVqUyS7tkn8bQI&feature=share" target="_blank">girls girls girls</a></li>
+        </div>
+    </nav>
+    <section class="Banner2">
+        <div class="contenedor-textos contenedor">
+            <h1>Mis Albumes favoritos</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cupiditate ea natus sequi temporibus.
+                Architecto atque consectetur cupiditate doloribus et nostrum praesentium repudiandae tenetur, vero.
+                Autem expedita molestiae sed sunt.</p>
+        </div>
+    </section>
+</section>
+
+<!--    uso de grid-->
+<section>
+    <div class="grid-container">
+        <div class="gridTitle">Fotos de albumes q me gustan(Usando Grid)</div>
+        <div class="grid-item"><img src="/Imagenes/ratt.jpg" alt="Imagen 1" width="225"></div>
+        <div class="grid-item"><img src="/Imagenes/lorelei.jpg" alt="Imagen 2" width="225"></div>
+        <div class="grid-item"><img src="/Imagenes/NoMoreTears.jpg" alt="Imagen 3" width="225"></div>
+        <div class="grid-item"><img src="/Imagenes/rustInPeace.jpg" alt="Imagen 4" width="225"></div>
+        <div class="grid-item"><img src="/Imagenes/LoveHurts.jpg" alt="Imagen 5" width="225"></div>
+        <div class="grid-item"><img src="/Imagenes/soFar.jpg" alt="Imagen 6" width="225"></div>
+        <div class="grid-item"><img src="/Imagenes/Scorpions.jpg" alt="Imagen 7" width="225"></div>
+        <div class="grid-item"><img src="/Imagenes/kiko.jpg" alt="Imagen 8" width="225"></div>
+        <div class="grid-item"><img src="/Imagenes/black.jpg" alt="Imagen 9" width="225"></div>
+        <div class="grid-item"><img src="/Imagenes/Heroes.jpg" alt="Imagen 10" width="225"></div>
+        <div class="grid-item"><img src="/Imagenes/skid.jpg" alt="Imagen 11" width="225"></div>
+        <div class="grid-item"><img src="/Imagenes/blackout.jpg" alt="Imagen 12" width="225"></div>
+    </div>
+
+</section>
+
+<section>
+    <div class="flex-container">
+        <div class="flexTitle">Fotos de albumes q me gustan(Usando flex)</div>
+        <div class="flex-item"><img src="/Imagenes/ratt.jpg" alt="Imagen 1" width="225"></div>
+        <div class="flex-item"><img src="/Imagenes/lorelei.jpg" alt="Imagen 2" width="225"></div>
+        <div class="flex-item"><img src="/Imagenes/NoMoreTears.jpg" alt="Imagen 3" width="225"></div>
+        <div class="flex-item"><img src="/Imagenes/rustInPeace.jpg" alt="Imagen 4" width="225"></div>
+        <div class="flex-item"><img src="/Imagenes/LoveHurts.jpg" alt="Imagen 5" width="225"></div>
+        <div class="flex-item"><img src="/Imagenes/soFar.jpg" alt="Imagen 6" width="225"></div>
+        <div class="flex-item"><img src="/Imagenes/Scorpions.jpg" alt="Imagen 7" width="225"></div>
+        <div class="flex-item"><img src="/Imagenes/kiko.jpg" alt="Imagen 8" width="225"></div>
+        <div class="flex-item"><img src="/Imagenes/black.jpg" alt="Imagen 9" width="225"></div>
+        <div class="flex-item"><img src="/Imagenes/Heroes.jpg" alt="Imagen 10" width="225"></div>
+        <div class="flex-item"><img src="/Imagenes/skid.jpg" alt="Imagen 11" width="225"></div>
+        <div class="flex-item"><img src="/Imagenes/blackout.jpg" alt="Imagen 12" width="225"></div>
+    </div>
+
+</section>
+</body>
+</html>
